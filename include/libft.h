@@ -30,6 +30,7 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_isspace(char c);
 int		ft_issignal(char c);
+int		ft_issign(char c);
 bool	ft_ismax(int this, int that);
 
 // converters

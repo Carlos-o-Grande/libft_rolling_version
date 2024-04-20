@@ -1,30 +1,34 @@
 # libft_rolling_version
 
-added
-	get_next_line
-	ft_printf
-	ft_fprintf
+#### added
+<pre>
+- ft_abs		(return absolute value of int)
+- ft_atof		(return float)
+- ft_atol		(return long int)
+- ft_fabs		(return absolute value of double)
+- ft_fabsf		(return absolute value of float)
+- ft_ftoa		(return *str from float)
+- ft_ftoa_addr		(return *str from float without malloc)
+- ft_ismax		(return TRUE / FALSE)
+- ft_issignal		(kept for compatibily)
+- ft_issign		(same as ft_issignal)
+- ft_isspace		(return int 1 if true, 0 if false)
+- ft_itoa_addr		(return *str from int without malloc)
+</pre>
 
-added
-	ft_abs
-	ft_atof
-	ft_atol
-	ft_fabs
-	ft_fabsf
-	ft_ftoa
-	ft_ftoa_addr
-	ft_ismax
-	ft_issignal
-	ft_isspace
-	ft_itoa_addr
-	
-refactor
-	makefile
-	libft.h
-	divide into subdirs
-	objects created on their own dir
-	
-	added libft_define.h
-	added pretty_colors_ANSI
-	
-	
+#### added from projects
+<pre>
+- get_next_line  
+- ft_printf  
+- ft_fprintf
+</pre>
+ 
+#### refactor
+<pre>
+- makefile  
+- divide into subdirs  
+- objects created on their own dir  
+
+- libft.h  	(defines moved to:)	libft_define.h  
+- added pretty_colors_ANSI
+</pre>

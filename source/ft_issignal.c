@@ -11,9 +11,13 @@
 /* ************************************************************************** */
 
 #include "../include/libft.h"
-// #include <stdio.h>
 
 int	ft_issignal(char c)
+{
+	return (c == '-' || c == '+');
+}
+
+int	ft_issign(char c)
 {
 	return (c == '-' || c == '+');
 }
