@@ -6,8 +6,9 @@ added
 	ft_fprintf
 
 added
-	ft_abb
+	ft_abs
 	ft_atof
+	ft_atol
 	ft_fabs
 	ft_fabsf
 	ft_ftoa
@@ -23,7 +24,7 @@ refactor
 	divide into subdirs
 	objects created on their own dir
 	
-	added libft_define
+	added libft_define.h
 	added pretty_colors_ANSI
 	
 	
