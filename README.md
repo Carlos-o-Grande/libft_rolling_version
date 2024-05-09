@@ -17,6 +17,8 @@
 - ft_issign		(same as ft_issignal)
 - ft_isspace		(return int 1 if true, 0 if false)
 - ft_itoa_addr		(return *str from int without malloc)
+- ft_free_dprt      (void, frees a **dptr)
+
 </pre>
 
 #### added from projects
