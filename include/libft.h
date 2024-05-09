@@ -6,7 +6,7 @@
 /*   By: cjoao-de <cjoao-de@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 17:47:56 by pfelix-o          #+#    #+#             */
-/*   Updated: 2024/05/09 16:08:35 by cjoao-de         ###   ########.fr       */
+/*   Updated: 2024/05/09 16:46:48 by cjoao-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	**ft_split(char const *str, char c);
 char	*get_next_line(int fd);
+size_t	ft_strcount(const char *str, char c);
 
 // output
 void	ft_putchar_fd(char c, int fd);

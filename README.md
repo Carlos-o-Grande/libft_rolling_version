@@ -17,7 +17,8 @@
 - ft_issign		(same as ft_issignal)
 - ft_isspace		(return int 1 if true, 0 if false)
 - ft_itoa_addr		(return *str from int without malloc)
-- ft_free_dprt      (void, frees a **dptr)
+- ft_free_dprt		(void, frees a **dptr)
+- ft_strcount		(return the number of times 'c' occurs on *str)
 
 </pre>
 
@@ -25,8 +26,8 @@
 <pre>
 - get_next_line  
 - ft_printf  
-- ft_fprintf    (obsolete, use ft_dprintf)
-- ft_dprintf    renamed: same as ft_fprintf (file descriptor instead of open file)
+- ft_fprintf		(obsolete, use ft_dprintf)
+- ft_dprintf		renamed: same as ft_fprintf (file descriptor instead of open file)
 </pre>
  
 #### refactor
