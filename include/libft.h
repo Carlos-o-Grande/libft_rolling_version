@@ -80,6 +80,7 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 int		ft_printf(const char *format, ...);
 int		ft_fprintf(int fd, const char *format, ...);
+int		ft_dprintf(int fd, const char *format, ...);
 
 // lists
 t_list	*ft_lstnew(void *content);
@@ -92,7 +93,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
-// dependicies for other functions
+// dependencies for other functions
 // ft_printf
 int		pf_sw_printf(va_list args, char format, int *pf_len);
 int		ft_printf_parser(const char *format, va_list args, int *pf_len);

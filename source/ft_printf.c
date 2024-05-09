@@ -99,6 +99,19 @@ int	ft_fprintf(int fd, const char *format, ...)
 	return (pf_len);
 }
 
+int	ft_dprintf(int fd, const char *format, ...)
+{
+	va_list	args;
+	int		pf_len;
+
+	pf_len = 0;
+	ft_define_fd(fd);
+	va_start(args, format);
+	pf_len = ft_printf_parser(format, args, &pf_len);
+	va_end(args);
+	return (pf_len);
+}
+
 	// vput_char('c', &pf_len, 1);
 int	ft_printf(const char *format, ...)
 {

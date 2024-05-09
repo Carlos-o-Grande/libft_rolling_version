@@ -1,5 +1,8 @@
 # libft_rolling_version
 
+### renamed
+- ft_fprintf -> ft_dprintf (file descriptor instead of open file)
+
 #### added
 <pre>
 - ft_abs		(return absolute value of int)
@@ -20,7 +23,8 @@
 <pre>
 - get_next_line  
 - ft_printf  
-- ft_fprintf
+- ft_fprintf    (obsolete, use ft_dprintf)
+- ft_dprintf    renamed: same as ft_fprintf (file descriptor instead of open file)
 </pre>
  
 #### refactor
