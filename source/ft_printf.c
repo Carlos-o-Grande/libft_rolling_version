@@ -6,7 +6,7 @@
 /*   By: cjoao-de <cjoao-de@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 13:27:18 by cjoao-de          #+#    #+#             */
-/*   Updated: 2024/01/29 17:17:56 by cjoao-de         ###   ########.fr       */
+/*   Updated: 2024/05/09 16:10:49 by cjoao-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ int	ft_printf_parser(const char *format, va_list args, int *pf_len)
 }
 
 	// vput_char('c', &pf_len, fd);
-int	ft_fprintf(int fd, const char *format, ...)
+int	ft_dprintf(int fd, const char *format, ...)
 {
 	va_list	args;
 	int		pf_len;
@@ -99,7 +99,9 @@ int	ft_fprintf(int fd, const char *format, ...)
 	return (pf_len);
 }
 
-int	ft_dprintf(int fd, const char *format, ...)
+// obsolete, use dprintf instead
+// (fprint outputs to a file, not a fd as intended)
+int	ft_fprintf(int fd, const char *format, ...)
 {
 	va_list	args;
 	int		pf_len;

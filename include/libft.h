@@ -6,7 +6,7 @@
 /*   By: cjoao-de <cjoao-de@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 17:47:56 by pfelix-o          #+#    #+#             */
-/*   Updated: 2024/04/07 16:16:49 by cjoao-de         ###   ########.fr       */
+/*   Updated: 2024/05/09 16:08:35 by cjoao-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_isspace(char c);
 int		ft_issignal(char c);
-int		ft_issign(char c);
 bool	ft_ismax(int this, int that);
 
 // converters
@@ -40,12 +39,7 @@ int		ft_atoi(const char *str);
 long	ft_atol(const char *str);
 float	ft_atof(const char *str);
 char	*ft_itoa(int n);
-char	*ft_itoa_addr(int n, char *itoa_str);
-char	*ft_ftoa(float nbr, int precision);
-// char	*ft_ftoa_addr(float nbr, int precision, char *ftoa_str);
 int		ft_abs(int n);
-double	ft_fabs(double n);
-float	ft_fabsf(float n);
 
 // memory
 void	*ft_memset(void *s, int c, size_t n);
@@ -56,7 +50,8 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t sz);
 void	*ft_calloc(size_t nmemb, size_t sz);
 char	*ft_strdup(const char *src);
-void	ft_free_dprt(char **dptr);
+void	ft_free_dptr(char **dptr);
+
 
 //strings
 size_t	ft_strlcpy(char *dst, const char *src, size_t sz);
@@ -82,6 +77,7 @@ void	ft_putnbr_fd(int n, int fd);
 int		ft_printf(const char *format, ...);
 int		ft_fprintf(int fd, const char *format, ...);
 int		ft_dprintf(int fd, const char *format, ...);
+char	*ft_sprintf(int fd, const char *format, ...);
 
 // lists
 t_list	*ft_lstnew(void *content);
@@ -101,6 +97,7 @@ int		ft_printf_parser(const char *format, va_list args, int *pf_len);
 void	vput_str(char *str, int *pf_len);
 int		ft_define_fd(int out);
 void	vput_char(char c, int *pf_len);
+// void	vput_char(char c, int *pf_len, ...);
 void	vput_base(int nbr, unsigned int base, char format, int *pf_len);
 void	vput_pointer(void *ptr, int *pf_len);
 // get_next_line
@@ -110,7 +107,5 @@ char	*ft_has_nl(char *str);
 void	ft_clear_buffer(char *str);
 size_t	ft_nl_strlen(char *str);
 int		ft_check_error(char *buffer, int fd);
-// ft_ftoa.c
-char	*ft_strjoin_ftoa(char *int_c, char *dec_c, int zeroes, int signal);
 
 #endif
