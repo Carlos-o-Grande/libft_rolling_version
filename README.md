@@ -19,7 +19,7 @@
 - ft_itoa_addr		(return *str from int without malloc)
 - ft_free_dprt		(void, frees a **dptr)
 - ft_strcount		(return the number of times 'c' occurs on *str)
-
+- ft_sprintf		(WIP)
 </pre>
 
 #### added from projects
